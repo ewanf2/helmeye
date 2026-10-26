@@ -71,14 +71,6 @@ kubectl config set-context --current --namespace=<namespace>
 
 A workload counts as part of a release when it has the label `app.kubernetes.io/managed-by=Helm` and the annotation `meta.helm.sh/release-name` set to the release name. Helm 3 adds both of these automatically, so anything installed with `helm install` should be picked up.
 
-## Releasing
-
-Pushing a tag that starts with `v` (for example `v0.2.0`) runs the GitHub Actions workflow in `.github/workflows/release.yml`, which builds `ht` for Linux and macOS on amd64 and arm64 and attaches the tarballs to a GitHub release. The install script always downloads from the latest release.
-
-```sh
-git tag v0.2.0
-git push origin v0.2.0
-```
 
 ## Built with
 
