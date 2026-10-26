@@ -34,7 +34,6 @@ Give it a release name and it finds every Deployment, StatefulSet and DaemonSet 
 curl -sSL https://raw.githubusercontent.com/ewanf2/cli_tool/main/install.sh | bash
 ```
 
-The script picks the right build for your OS and architecture (amd64 or arm64) from the latest GitHub release and installs it to `/usr/local/bin/ht`. It will ask for `sudo` if that directory isn't writable.
 
 ### From source
 
